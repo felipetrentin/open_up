@@ -1,1 +1,29 @@
-<h1> hello! </h1>
+<!DOCTYPE html>
+<head>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div style="margin: 10px;">
+            <button class="clickme">Logout</button>
+        </div>
+        <div style="display: flex; justify-content: center; width: 100%;">
+            <h2>Usuário atual:</h2>
+            <p>Felipe Trentin</p>
+        </div>
+        <div style="display: flex; justify-content: right; height: 100%;">
+            <img src="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-hostgator-brasil-v1-0-8%2F278%2F581278%2FJmqkDM4v%2Fe6aff8ce0cfc44dc8147e2b8574826b8&methods=resize%2C500%2C5000" 
+            alt="logo" style="width: 100%;">
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div class="codeFrame">
+            <div>
+                <div id="qrcode"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

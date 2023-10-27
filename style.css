@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.codeFrame {
+    --angle: 0deg;
+    border: 5px solid transparent;
+    border-image: conic-gradient(from var(--angle), #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    padding: 10px;
+    width: fit-content;
+    animation: 10s rotate linear infinite;
+    margin: 20px;
+    box-shadow: 3px 4px 8px 0px rgba(99, 99, 99, 0.75);
+    -webkit-box-shadow: 3px 4px 8px 0px rgba(99, 99, 99, 0.75);
+    -moz-box-shadow: 3px 4px 8px 0px rgba(99, 99, 99, 0.75);
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.header {
+    background-color: #a969f3;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 70px;
+}
+
+.clickme {
+    color: #ecf0f1;
+    font-size: 17px;
+    background-color: #e62222;
+    border: 1px solid #ce1010;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 6px 0px #d30000;
+    transition: all .1s;
+    margin-bottom: 6px;
+    height: fit-content;
+}
+
+.clickme:active {
+    box-shadow: 0px 2px 0px #d30000;
+    position: relative;
+    top: 2px;
+}
